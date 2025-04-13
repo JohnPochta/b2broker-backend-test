@@ -55,6 +55,22 @@ GET http://localhost:3000/contract-call/:tokenAddress/balance/:userAddress
 http://localhost:3000/contract-call/0x01297e5b14004883CC77c0c5d3f42CA1000013C1/balance/0x2D0bf6D3BD0636eec331f7c2861F44D74a2dcaC3
 ```
 
+Build transferFrom assumes approve mechanism. Here's all bundled into a single endpoint:
+
+```
+http://localhost:3000/contract-call/pay/build
+```
+✅ Example Body:
+
+```
+{
+ "tokenTicker": "B2BT",
+ "tokenAmount": 10,
+ "userAddress": "0x2D0bf6D3BD0636eec331f7c2861F44D74a2dcaC3"
+}
+```
+
+
 Check the tests on the sepolia etherscan: 
 https://sepolia.etherscan.io/address/0x01297e5b14004883cc77c0c5d3f42ca1000013c1
 
