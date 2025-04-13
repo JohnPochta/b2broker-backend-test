@@ -1,0 +1,44 @@
+{
+  "name": "coinflip",
+  "version": "1.0.0",
+  "dependencies": {
+    "@fastify/helmet": "^11.1.1",
+    "@nestjs/common": "^11.0.16",
+    "@nestjs/core": "^11.0.16",
+    "@nestjs/jwt": "^11.0.0",
+    "@nestjs/platform-fastify": "^11.0.16",
+    "@types/node": "^16.11.10",
+    "bcrypt": "^5.0.1",
+    "class-validator": "^0.14.1",
+    "decimal.js": "^10.4.3",
+    "dotenv": "^16.0.0",
+    "ethers": "^5.6.9",
+    "pg": "^8.7.1",
+    "viem": "^2.26.3"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.6",
+    "@nestjs/schematics": "^9.0.1",
+    "@nestjs/testing": "^11.0.16",
+    "@types/bcrypt": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^8.0.1",
+    "jest": "^28.1.1",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^9.3.1",
+    "ts-node": "^10.8.1",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "build": "nest build",
+    "start:prod": "node dist/main"
+  }
+}

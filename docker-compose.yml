@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: coinflip_service
+    build:
+      context: .
+    command: >
+      sh -c "
+      echo coinflip_service is ready to fly!!;
+      yarn start:dev
+      "
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+    volumes:
+      - ./src:/var/www/html/src
+      - ./test:/var/www/html/test
+    networks:
+      - public
+
+  postgres:
+    image: postgres:11
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=b2broker_db
+    volumes:
+      - postgres:/var/lib/postgresql/data
+
+    networks:
+      - public
+
+volumes:
+  postgres: 
+networks:
+  public:
+    external:
+      name: public
