@@ -29,13 +29,17 @@ git clone https://github.com/JohnPochta/b2broker-backend-test.git
 cd b2broker-backend-test
 ```
 
+```
+cp .env.example .env
+```
+
 Start the Backend Server
 Run the startup script:
 ./start.sh
 
 This will install dependencies and launch the local backend server.
 
-4. Configure Environment
+Configure Environment
 Copy the example environment file:
 
 ```
