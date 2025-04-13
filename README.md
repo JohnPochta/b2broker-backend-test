@@ -29,6 +29,8 @@ git clone https://github.com/JohnPochta/b2broker-backend-test.git
 cd b2broker-backend-test
 ```
 
+Configure Environment
+Copy the example environment file:
 ```
 cp .env.example .env
 ```
@@ -38,15 +40,6 @@ Run the startup script:
 ./start.sh
 
 This will install dependencies and launch the local backend server.
-
-Configure Environment
-Copy the example environment file:
-
-```
-cp .env.example .env
-```
-
-Then, fill in the required variables in .env (e.g., RPC URL, private key, deployed token address, etc.).
 
 API Endpoints
 🔍 Get Token Balance
@@ -66,6 +59,6 @@ Check the tests on the sepolia etherscan:
 https://sepolia.etherscan.io/address/0x01297e5b14004883cc77c0c5d3f42ca1000013c1
 
 🧪 TransferFrom Testing
-To test the transferFrom functionality, use the provided frontend interface.
+To test the transferFrom functionality, use the provided frontend interface. https://github.com/JohnPochta/b2broker-backend-test-util
 
 The frontend handles wallet connection and transaction signing for simulating token transfers.
