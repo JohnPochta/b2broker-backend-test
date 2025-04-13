@@ -5,8 +5,6 @@ WORKDIR /var/www/html
 RUN apk add git \
   netcat-openbsd
 
-COPY .npmrc ./
-
 COPY package*.json /var/www/html/
 RUN npm ci --force
 
