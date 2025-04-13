@@ -25,8 +25,8 @@ Follow its README to complete the deployment process on your desired network (e.
 Clone the utility backend project for testing:
 
 ```bash
-git clone https://github.com/JohnPochta/b2broker-backend-test-util.git
-cd b2broker-backend-test-util
+git clone https://github.com/JohnPochta/b2broker-backend-test.git
+cd b2broker-backend-test
 ```
 
 Start the Backend Server
