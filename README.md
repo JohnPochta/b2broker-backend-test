@@ -39,7 +39,7 @@ Start the Backend Server
 Run the startup script:
 ./start.sh
 
-This will install dependencies and launch the local backend server.
+This will install dependencies and launch the local backend server using docker and NEST.js allowing safe run in docker container.
 
 API Endpoints
 🔍 Get Token Balance
